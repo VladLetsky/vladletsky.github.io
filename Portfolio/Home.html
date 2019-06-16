@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <Script src="js/wow.min.js"></Script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <title>Портфолио Белецкого Влада</title>
+</head>
+<body class="wow bounceInRight">
+    <header id="header">
+        <nav class="wow bounceInDown">
+            <ul class="topnav">
+                <li><a class="activelink" href="Home.html">Главная</a></li>
+                <li><a href="Training.html">Обучение</a></li>
+                <li><a href="Myteam.html">Моя команда</a></li>
+                <li><a href="Myhobbies.html">Мои увлечения</a></li>
+            </ul>   
+        </nav>
+        <div class="header_title wow tada">
+            <div class="header_title__img">
+                <img src="img/MyPhoto.png" alt="">
+            </div>
+            <div class="header_title__text">
+                <h1><h1>Привет! Я <span>Влад.</span><br>И это мой сайт - Портфолио.</h1>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="social">
+                <a href="https://vk.com/vladletsky"><img src="img/icons/vkontakte-logo.png" alt=""></a>
+                <a href="https://www.behance.net/Letsky"><img src="img/icons/behance.png" alt=""></a>
+                <a href="#"><img src="img/icons/telegram.png" alt=""></a>
+            </div>
+            <div class="down_arrow wow bounceInUp">
+                <a href="#main"><img src="img/icons/down-arrow.png" alt=""></a>
+            </div>
+            <div class="year">
+                <img src="img/2019.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="main_title">
+            <div class="main_title__title-bg ">
+                <h3>ABOUT ME</h3>
+            </div>
+            <div class="main_title__main">
+                <h4>ОБО МНЕ</h4>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="main_content__text">
+                <p> Меня зовут Белецкий Владислав Сергеевич, мне 18 лет и я студент 21 группы, коллдежа СРКВТиЭ. Учусь по специальности 09.02.03  Программирование в компьютерных системах.</p>
+            </div>
+        </div>
+        <div class="main_links">
+            <div class="main_links__summary">
+                <a href="#"><img src="img/summary.jpg" alt=""></a>
+                <p>Резюме</p>
+                <img src="img/icons/file.png" alt="">
+            </div>
+            <div class="main_links__report">
+                <a href="#"><img src="img/Report.png" alt=""></a>
+                <p>Отчет</p>
+                <img src="img/icons/file.png" alt="">
+            </div>
+        </div>
+    </main>
+    <a href="#header" title="Вернуться наверх" id="btnup" class="buttonup"><img src="img/icons/up-arrow.png"></a>
+    <footer>
+        <p>©Create&Designed by <span class="letsky">Letsky</span></p>
+        <img src="img/footer2019.png" alt="">
+    </footer>
+
+
+
+    <script>
+        $("body").on('click', '[href*="#"]', function(e){
+        var fixed_offset = 100;
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+        e.preventDefault();
+        });
+
+        new WOW().init();
+    </script>
+
+</body>
+</html>

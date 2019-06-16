@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/training.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <Script src="js/wow.min.js"></Script>
+    <title>Портфолио Белецкого Влада</title>
+</head>
+<body class="wow bounceInLeft">
+        <header id="header">
+                <nav class="wow bounceInDown">
+                    <ul class="topnav">
+                        <li><a href="Home.html">Главная</a></li>
+                        <li><a class="activelink" href="Myteam.html" href="Training.html">Обучение</a></li>
+                        <li><a href="Myteam.html">Моя команда</a></li>
+                        <li><a href="Myhobbies.html">Мои увлечения</a></li>
+                    </ul>   
+                </nav>
+                <div class="header_quote">
+                    <div class="header_quote__text">
+                        <p>Учитесь так, словно вы постоянно испытываете  нехватку своих знаний, и так, словно вы постоянно боитесь растерять свои знания.</p>
+                    </div>
+                </div>
+                <div class="header_down">
+                    <div class="down_arrow">
+                        <a href="#main"><img src="img/icons/down-arrow.png" alt=""></a>
+                    </div>
+                    <div class="header_qoute-autor">
+                        <p>Конфуций</p>
+                    </div>
+                </div>
+        </header>
+        <main id="main">
+         <div class="main_title">
+            <div class="main_title__title-bg ">
+                <h3>TRAINING</h3>
+            </div>
+            <div class="main_title__main">
+                <h4>ОБУЧЕНИЕ</h4>
+            </div>
+            <table  width="100%" cellpadding="5">
+                <tr>
+                 <th>Номер</th>
+                 <th>Предмет</th>
+                 <th>Количество Часов</th>
+                 <th>Оценка</th>
+                </tr>
+                <tr>
+                 <td>1</td>
+                 <td>Физическая культура</td>
+                 <td>70</td>
+                 <td>5 (Отлично)</td>
+               </tr>
+               <tr>
+                <td>2</td>
+                <td>Архитектура и КС</td>
+                <td>120</td>
+                <td>3(Удовлетворительно)</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Элементы математической логики</td>
+                <td>80</td>
+                <td>3 (Удовлетворительно)</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Теория алгоритмов</td>
+                <td>66 </td>
+                <td>3 (Удовлетворительно)</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>История</td>
+                <td>64</td>
+                <td>3 (Удовлетворительно)</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Основы Программирования</td>
+                <td>64</td>
+                <td>3 (Удовлетворительно)</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Основы философии</td>
+                <td>64</td>
+                <td>3 (Удовлетворительно)</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>ПОПД</td>
+                <td>52</td>
+                <td>3 (Удовлетворительно)</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Основы высшей математики</td>
+                <td>254</td>
+                <td>3 (Удовлетворительно)</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>МДК 04.01</td>
+                <td>300</td>
+                <td>3 (Удовлетворительно)</td>
+              </tr>
+              </table>
+        </div>
+        <div class="intuit">
+            <a href="https://www.intuit.ru/verifydiplomas/101195423"><img src="img/intuit/i1.jpg" alt=""></a>
+            <a href="https://www.intuit.ru/verifydiplomas/101235808"><img src="img/intuit/i2.jpg" alt=""></a>
+            <a href="https://www.intuit.ru/verifydiplomas/101252534"><img src="img/intuit/i3.jpg" alt=""></a>
+        </div>
+        </main>
+        <a href="#header" title="Вернуться наверх" id="btnup" class="buttonup"><img src="img/icons/up-arrow.png"></a>
+    <footer>
+        <p>©Create&Designed by <span class="letsky">Letsky</span></p>
+        <img src="img/footer2019.png" alt="">
+    </footer>
+
+
+
+
+
+    <script>
+        $("body").on('click', '[href*="#"]', function(e){
+        var fixed_offset = 100;
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+        e.preventDefault();
+        });
+        new WOW().init();
+      </script>
+</body>
+</html>

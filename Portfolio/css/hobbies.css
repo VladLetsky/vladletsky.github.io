@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+header{
+    background-image: linear-gradient(rgba(58, 54, 82, 44%), rgba(58, 54, 82, 44%)),url("../img/hobbies_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 85px;
+    background: rgba(17, 17, 17, 0.94);
+}
+nav > ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 43px;
+    padding-top: 22px;
+}
+.topnav{
+    display: flex;
+    list-style: none;
+}
+.topnav li a{
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    margin-left: 28px;
+}
+.topnav li a:hover{
+    color: #FFDA68;
+    transition: 0.8s all;
+}
+.activelink{
+    color: #FFDA68 !important;
+}
+.header_quote{
+    position: relative;
+    padding-top: 540px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 55px;
+}
+.header_quote__text p{
+    width: 980px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 48px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+.header_quote__text p::before{
+    content:url(../img/icons/quote.png);
+    display: block;
+    position: relative;
+    right: 60px;
+    top: 30px;
+}
+.header_down{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 65px 0px 148px;
+}
+.header_qoute-autor p{
+    font-family: Roboto Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    color: #D5D5D5;
+}
+main{
+    max-width: 981px;
+    margin: 0 auto;
+    position: relative;
+}
+.main_title{
+    padding-top: 61px;
+    padding-bottom: 61px;
+    position: relative;
+}
+.main_title__title-bg h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 124px;
+    line-height: 145px;
+    color: rgba(196, 196, 196, 0.21);
+}
+.main_title__main h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 60px;
+    color: #4F4E4E;
+    position: absolute;
+    top: 130px;
+    left: 38px;
+}
+.main_design{
+    padding-top: 61px;
+    position: relative;
+}
+.main_design__title h3{
+    position: absolute;
+    font-weight: bold;
+    font-size: 92px;
+    line-height: 108px;
+    color: #FFFFFF;
+    top: 80px;
+    left: 35px;
+}
+.main_design__text p{
+    position: absolute;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+    bottom: 25px;
+    left: 32px;
+}
+.main_html{
+    padding-top: 61px;
+    position: relative;
+}
+.main_html__title h3{
+    position: absolute;
+    font-weight: bold;
+    font-size: 92px;
+    line-height: 108px;
+    color: #FFFFFF;
+    top: 80px;
+    left: 35px;
+}
+.main_html__text p{
+    max-width: 925px;
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+    color: #FFFFFF;
+    bottom: 20px;
+    left: 32px;
+}
+.main_works__grid{
+    padding-top: 61px;
+}
+.main_works{
+    padding-top: 61px;
+}
+.left{
+    padding-left: 11px;
+}
+.top{
+    padding-bottom: 11px;
+}
+.small h3{
+    font-size: 78px !important; 
+}
+.small2 h4{
+    font-size: 42px !important; 
+}
+iframe{
+    width: 100%;
+    height: 500px;
+    padding-top: 61px;
+}
+.mytools{
+    padding-top: 61px;
+    padding-bottom: 61px;
+    max-width: 725px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.slider{
+    margin-top: 61px;
+}
+.bx-wrapper{
+    padding-top: 61px;
+}
+.buttonup{
+    position: relative;
+    left: 145px;
+    bottom: 100px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(17, 17, 17, 0.94);
+    text-align: center;
+}
+footer p{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.letsky{
+    color: #FFDA68 !important
+}
+
+@media (max-width: 1280px){
+    .header_down{
+        padding: 0px 65px 0px 90px;
+    }
+}

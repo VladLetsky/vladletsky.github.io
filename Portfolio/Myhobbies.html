@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hobbies.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <Script src="js/wow.min.js"></Script>
+    <title>Портфолио Белецкого Влада</title>
+</head>
+<body class="wow bounceInLeft">
+    <header id="header">
+        <nav class="wow bounceInDown">
+            <ul class="topnav">
+                <li><a href="Home.html">Главная</a></li>
+                <li><a href="Training.html">Обучение</a></li>
+                <li><a href="Myteam.html">Моя команда</a></li>
+                <li><a class="activelink" href="Myhobbies.html">Мои увлечения</a></li>
+            </ul>   
+        </nav>
+        <div class="header_quote">
+            <div class="header_quote__text">
+                <p>У каждого юноши есть увлечение, и самое лучшее из них — увлечение искусством делать деньги.</p>
+            </div>
+        </div>
+        <div class="header_down">
+            <div class="down_arrow">
+                <a href="#main"><img src="img/icons/down-arrow.png" alt=""></a>
+            </div>
+            <div class="header_qoute-autor">
+                <p>Джек Херли</p>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="main_title">
+            <div class="main_title__title-bg ">
+                <h3>MY HOBIES</h3>
+            </div>
+            <div class="main_title__main">
+                <h4>МОИ УВЛЕЧЕНИЯ</h4>
+            </div>
+        </div>
+        <div class="main_design">
+            <div class="main_design__img">
+                <img src="img/design.png" alt="">
+            </div>
+            <div class="main_design__title">
+                    <h3>Дизайн</h3>
+                </div>
+            <div class="main_design__text">
+                <p>Дизайн я открыл для себя не давно. В основном занимаюсь веб - дизайном. Мне это нравиться больше всего. Макет для этого  сайта с моим портфолио, я  создал сам.</p>
+            </div>
+        </div>
+        <div class="main_works">
+            <div class="main_works">
+                <img src="img/work/nlb.png" alt="">
+            </div>
+            <div class="main_works__grid">
+                <img class="top" src="img/work/b1.png" alt="">
+                <img class="left top" src="img/work/b2.png" alt="">
+                <img src="img/work/b3.png" alt="">
+                <img class="left" src="img/work/b1.png" alt="">
+            </div>
+            <div class="main_works">
+                <img src="img/work/adidasjpg.png" alt="">
+            </div>
+            <div class="main_works ">
+                    <img src="/img/work/snab.png" alt="">
+            </div>
+        </div>
+        <div class="main_html">
+                <div class="main_html__img">
+                    <img src="img/html.png" alt="">
+                </div>
+                <div class="main_html__title">
+                        <h3>Создание сайтов</h3>
+                    </div>
+                <div class="main_html__text">
+                    <p>Создание сайтов меня заинтересовало еще на 1 курсе, тогда я создал свой первый сайт для моего проекта по математике. Сейчас я активно верстаю сайты и изучаю язык JavaScript</p>
+                </div>
+            </div>
+            <div class="main_works">
+                    <img src="img/work/verstka_1.png" alt="">
+                </div>
+                <div class="main_works">
+                    <img src="img/work/verstka_2.png" alt="">
+                </div>
+                <div class="main_works">
+                    <img src="img/work/verstka_3.png" alt="">
+                </div>
+                <div class="main_works">
+                    <img src="img/work/verstka_4.png" alt="">
+                </div>
+                <div class="main_title">
+                    <div class="main_title__title-bg small">
+                        <h3>Layout creation process</h3>
+                    </div>
+                    <div class="main_title__main small2">
+                        <h4>Процесс создания макета</h4>
+                    </div>
+                </div>
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/VXK12Uaxt9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="mytools">
+                    <img src="img/icons/PS_icon.png" alt="">
+                    <img src="img/icons/figma_icon.png" alt="">
+                    <img src="img/icons/vsc_icon.png" alt="">
+                </div>
+    </main>
+    <a href="#header" title="Вернуться наверх" id="btnup" class="buttonup"><img src="img/icons/up-arrow.png"></a>
+    <footer>
+        <p>©Create&Designed by <span class="letsky">Letsky</span></p>
+        <img src="img/footer2019.png" alt="">
+    </footer>
+
+    <script>
+        $("body").on('click', '[href*="#"]', function(e){
+        var fixed_offset = 100;
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+        e.preventDefault();
+        });
+        new WOW().init();
+    </script>
+</body>
+</html>

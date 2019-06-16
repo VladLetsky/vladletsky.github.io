@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/myteam.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <Script src="js/wow.min.js"></Script>
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider();
+        });
+        $("body").on('click', '[href*="#"]', function(e){
+        var fixed_offset = 100;
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+        e.preventDefault();
+        });
+        new WOW().init();
+      </script>
+    <title>Портфолио Белецкого Влада</title>
+</head>
+<body class="wow bounceInRight">
+        <header id="header">
+                <nav class="wow bounceInDown">
+                    <ul class="topnav">
+                        <li><a href="Home.html">Главная</a></li>
+                        <li><a href="Training.html">Обучение</a></li>
+                        <li><a class="activelink" href="Myteam.html">Моя команда</a></li>
+                        <li><a href="Myhobbies.html">Мои увлечения</a></li>
+                    </ul>   
+                </nav>
+                <div class="header_quote">
+                    <div class="header_quote__text">
+                        <p>Собраться вместе есть начало. Держаться вместе есть прогресс. Работать вместе есть успех.</p>
+                    </div>
+                </div>
+                <div class="header_down">
+                    <div class="down_arrow">
+                        <a href="#main"><img src="img/icons/down-arrow.png" alt=""></a>
+                    </div>
+                    <div class="header_qoute-autor">
+                        <p>Генри форд</p>
+                    </div>
+                </div>
+        </header>
+        <main id="main">
+         <div class="main_title">
+            <div class="main_title__title-bg ">
+                <h3>MY TEAM</h3>
+            </div>
+            <div class="main_title__main">
+                <h4>МОЯ КОМАНДА</h4>
+            </div>
+        </div>
+        <div class="main_team">
+            <div class="main_team__img">
+                <img src="img/myteam/t1.png" alt="">
+            </div>
+            <div class="main_team__2_img">
+                    <img src="img/myteam/tleft.png" alt="">
+                    <img src="img/myteam/tright.png" alt="">
+            </div>
+            <div class="main_team__img paddingfix">
+                    <img src="img/myteam/t3.png" alt="">
+            </div>
+        </div>
+        <div class="main_title titefix">
+                <div class="main_title__title-bg ">
+                    <h3>PROGGRESS</h3>
+                </div>
+                <div class="main_title__main">
+                    <h4>ДОСТИЖЕНИЯ</h4>
+                </div>
+        </div>
+        <div class="slider">
+            <div><img src="img/slider/s4.png" alt=""></div>
+            <div><img src="img/slider/slide1.png" alt=""></div>
+            <div><img src="img/slider/s3.png" alt=""></div>
+            <div><img src="img/slider/s2.png" alt=""></div>
+            <div><img src="img/slider/s5.png" alt=""></div>
+        </div>
+        </main>
+        <a href="#header" title="Вернуться наверх" id="btnup" class="buttonup"><img src="img/icons/up-arrow.png"></a>
+    <footer>
+        <p>©Create&Designed by <span class="letsky">Letsky</span></p>
+        <img src="img/footer2019.png" alt="">
+    </footer>
+
+
+
+    <script>
+        $("body").on('click', '[href*="#"]', function(e){
+        var fixed_offset = 100;
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+        e.preventDefault();
+        });
+      </script>
+</body>
+</html>
